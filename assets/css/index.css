@@ -1,0 +1,16 @@
+.layui-footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.iconfont {
+  margin-right: 8px;
+}
+
+.layui-icon {
+  margin-right: 8px;
+  margin-left: 15px;
+}
+.layui-nav-bar {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)!important;
+}
