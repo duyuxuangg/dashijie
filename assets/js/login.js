@@ -9,7 +9,6 @@ $(function () {
     $(".loginBox").show();
     $(".regBox").hide();
   })
-
   //用户验证
   var form = layui.form;
   form.verify({
@@ -58,7 +57,7 @@ $(function () {
         layer.msg("登陆成功请登陆,嘿嘿嘿");
         console.log(res);
         localStorage.setItem("token", res.token);
-        // location.href = "login.html";
+        location.href = "index.html";
       }
     })
   })

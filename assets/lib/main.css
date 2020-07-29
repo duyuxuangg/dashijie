@@ -305,13 +305,13 @@ body{
 	display:inline-block;
 	margin:10px 0 0 20px;
 	font-family:'Arial';
-	color:#83a2ed;
+    color:#84fab0;
 }
 
 .spannel span{
 	font-size:14px;
 	display:inline-block;
-	color:#83a2ed;
+	color:#89f7fe;
 	margin-left:10px;
 }
 
@@ -321,22 +321,22 @@ body{
 	bottom:0;
 	width:100%;
 	line-height:24px;
-	background:#e5e5e5;
+	background:#e1e6ee;
 	color:#333;
 	font-size:14px;
 	font-weight:normal;
 }
 
 .scolor01 em,.scolor01 span{
-	color:#6ac6e2;
+	color:#fe5196
 }
 
 .scolor02 em,.scolor02 span{
-	color:#5fd9de;
+	color:#04befe
 }
 
 .scolor03 em,.scolor03 span{
-	color:#58d88e;
+	color:#00e3ae
 }
 
 

@@ -13,14 +13,15 @@
 <body class="layui-layout-body">
 
     <div class="layui-layout layui-layout-admin">
-        <div class="layui-header ">
+        <div class="layui-header layui-bg-blue">
             <div class="layui-logo">
                 <img src="assets/images/logo.png" alt="" style="height: 50px;">
             </div>
             <ul class="layui-nav layui-layout-right ">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="userinfo">
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span class="text-avatar">A</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -30,7 +31,7 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="">
+                    <a href="javascript:;" id="btnloginout">
                         <span class="iconfont icon-tuichu"></span>
                         退出
                     </a>
@@ -38,12 +39,17 @@
             </ul>
         </div>
 
-        <div class="layui-side layui-bg-black">
+        <div class="layui-side layui-bg-blue">
             <div class="layui-side-scroll ">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree " lay-filter="test" lay-shrink="all">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">
+                <div href="javascript:;" class="userinfo">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <span class="text-avatar">A</span>
+                    <span id="welcome">欢迎xxxxx</span>
+                </div>
+                <ul class="layui-nav layui-nav-tree layui-bg-blue" lay-filter="test" lay-shrink="all">
+                    <li class="layui-nav-item layui-this ">
+                        <a href="/home/dashboard.html" target="fm">
                             <span class="iconfont icon-home"></span>
                             首页
                         </a>
@@ -68,7 +74,7 @@
                             个人中心
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">
+                            <dd><a href="user/user.html" target="fm">
                                     <i class="layui-icon layui-icon-star"></i>基本资料</a></dd>
                             <dd><a href="javascript:;">
                                     <i class="layui-icon layui-icon-picture"></i>更换头像</a></dd>
@@ -82,7 +88,9 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <div style="padding: 15px;">内容主体区域</div>
+            <iframe src="home/dashboard.html" name="fm" frameborder="0">
+
+            </iframe>
         </div>
 
         <div class="layui-footer">
@@ -91,6 +99,9 @@
         </div>
     </div>
     <script src="assets/lib/layui/layui.all.js"></script>
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/js/baseAPI.js"></script>
+    <script src="assets/js/index.js"></script>
     <script>
         //JavaScript代码区域
         layui.use('element', function () {
